@@ -1,4 +1,5 @@
 /*
+go
 Archivo: personaje.ccp
 Autor: Jose Erley Murillo Torres
 Correo: jose.erley.murillo@correounivlle.edu.co
