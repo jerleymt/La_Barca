@@ -1,10 +1,8 @@
 #include "Individuo.h"
 
-Individuo::Individuo(string _nombre, bool _herbivoro, bool _carnivoro)
+Individuo::Individuo(string _nombre)
 {
   nombre=_nombre;
-  herbivoro=_herbivoro;
-  carnivoro=_carnivoro;
 }
 
 Individuo::~Individuo() 
@@ -19,12 +17,12 @@ string Individuo::obtener_nombre()
 
 void Individuo::es_carnivoro()
 {
-  
+  herbivoro = true;
 }
 
 void Individuo::es_herbivoro()
 {
-  
+  carnivoro=true;
 }
 
 

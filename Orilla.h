@@ -4,13 +4,15 @@
 #include "Lugar.h"
 
 #include <string>
+#include <vector>
 
 using namespace std;
 
-class Orilla: public Lugar
+class Orilla
 {
   private:
   string nombre;
+  vector<string>espacio;
 
   public:
   Orilla(string);
@@ -18,6 +20,10 @@ class Orilla: public Lugar
   virtual ~Orilla();
 
   virtual string  obtener_nombre();
+
+  virtual void  subir(string);
+  virtual string  mostrar(int);
+
 };
   
 #else

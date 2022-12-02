@@ -1,9 +1,10 @@
 #include "Lugar.h"
 
-Lugar::Lugar(string _nombre)
+Lugar::Lugar(string dato_entrada)
 {
-  nombre = _nombre;
+  espacio.push_back(dato_entrada);
 }
+
 
 Lugar::~Lugar()
 {

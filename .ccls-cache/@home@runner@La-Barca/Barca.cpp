@@ -1,6 +1,6 @@
 #include "Barca.h"
 
-Barca::Barca(string _nombre): Lugar (_nombre)
+Barca::Barca(string _nombre)
 {
   nombre=_nombre;  
 }

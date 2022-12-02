@@ -7,7 +7,7 @@
 
 using namespace std;
 
-class Barca: public Lugar
+class Barca
 {
   private:
   string nombre;

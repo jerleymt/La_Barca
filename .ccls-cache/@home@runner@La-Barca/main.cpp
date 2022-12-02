@@ -25,12 +25,48 @@ lograr que el robot transporte los tres individuos a la otra orilla, sanos y sal
 using namespace std;
 int main()
 {
-  Individuo robot ("Robot", false, false);
-  Individuo zorro ("Zorro", false, false);
-  Individuo conejo ("Conejo", false, false);
-  Individuo lachuga ("Lechuga", false, false);
+  Individuo robot        ("|Robot    |");
+  Individuo zorro        ("|Zorro    |");  
+  zorro.es_carnivoro();
+  Individuo conejo       ("|Conejo   |");  
+  conejo.es_herbivoro();
+  Individuo lechuga      ("|Lechuga  |");
+
+  Orilla la_barca        ("|La Barca |");
+  Orilla orilla_izquierda("|Izquierda|");
+  Orilla orilla_derecha  ("|Derecha  |");
+
+  Lugar el_lugar("El lugar");
+
+  Jugador player("Jugador");
+
+
+  orilla_izquierda.subir(robot.obtener_nombre());
+  orilla_izquierda.subir(zorro.obtener_nombre());
+  orilla_izquierda.subir(conejo.obtener_nombre());
+  orilla_izquierda.subir(lechuga.obtener_nombre());
+
+  orilla_derecha.subir(robot.obtener_nombre());
   
-  
+
+  cout << orilla_izquierda.obtener_nombre()<<endl;
+  cout << orilla_izquierda.mostrar(0)<<endl;
+  cout << orilla_izquierda.mostrar(1)<<endl;
+  cout << orilla_izquierda.mostrar(2)<<endl;
+  cout << orilla_izquierda.mostrar(3)<<endl;
+
+  cout << orilla_derecha.obtener_nombre()<<endl;
+  cout << orilla_derecha.mostrar(0)<<endl;
+  cout << orilla_derecha.mostrar(1)<<endl;
+  cout << orilla_derecha.mostrar(2)<<endl;
+  cout << orilla_derecha.mostrar(3)<<endl;
+
+  cout << la_barca.obtener_nombre()<<endl;
+  cout << la_barca.mostrar(0)<<endl;
+  cout << la_barca.mostrar(1)<<endl;
+  cout << la_barca.mostrar(2)<<endl;
+  cout << la_barca.mostrar(3)<<endl;
+    
   
   cout << "¡Si llego!" <<endl;
   return 0;
