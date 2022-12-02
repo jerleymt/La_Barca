@@ -1,4 +1,4 @@
-/*
+
 Archivo: personaje.h
 Autor: Jose Erley Murillo Torres
 Correo: jose.erley.murillo@correounivlle.edu.co

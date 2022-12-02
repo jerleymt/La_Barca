@@ -1,6 +1,6 @@
 
-#include "orilla.h"
-Barca::Barca()
+#include "Orilla.h"
+Orilla::Ortlla()
 {
   
 }

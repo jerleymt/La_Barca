@@ -12,12 +12,17 @@ solos al zorro y el conejo, el zorro se comerá el conejo. Y si deja solos al co
 lechuga, el conejo se comerá la lechuga. El jugador debe controlar que órdenes dar, para
 lograr que el robot transporte los tres individuos a la otra orilla, sanos y salvos.
 */
-#include "personaje.h"
+
+#include "Barca.h"
+#include "Individuo.h"
+#include "Orilla.h"
 #include <iostream>
+#include <string>
 
-int main() {
-  Personaje zorro("Juan");
+using namespace std;
+int main()
+{
 
-  zorro.sube_a_la_barca(true);
+  
   return 0;
 }
