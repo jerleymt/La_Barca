@@ -1,12 +1,13 @@
 #ifndef BARCA_H
 #define BARCA_H
 
-//#include <vector>
+#include "Lugar.h"
+
 #include <string>
-//#include "Individuo.h"
+
 using namespace std;
 
-class Barca
+class Barca: public Lugar
 {
   private:
   string nombre;

@@ -15,11 +15,15 @@ class Individuo
   
   public:
 
-  Individuo(string nombre, bool herbivoro, bool carnivoro);
+  Individuo(string nombre);
 
   virtual ~Individuo();
 
   virtual string  obtener_nombre();
+
+  virtual void  es_herbivoro();
+
+  virtual void  es_carnivoro();
 
   virtual string dieta();
 };

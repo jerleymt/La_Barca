@@ -1,11 +1,13 @@
 #ifndef ORILLA_H
 #define ORILLA_H
 
+#include "Lugar.h"
+
 #include <string>
 
 using namespace std;
 
-class Orilla
+class Orilla: public Lugar
 {
   private:
   string nombre;

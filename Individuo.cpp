@@ -17,6 +17,17 @@ string Individuo::obtener_nombre()
   return nombre; 
 }
 
+void Individuo::es_carnivoro()
+{
+  
+}
+
+void Individuo::es_herbivoro()
+{
+  
+}
+
+
 string Individuo::dieta() {
   if (herbivoro == false && carnivoro == false) {
     return " es un vegetal";

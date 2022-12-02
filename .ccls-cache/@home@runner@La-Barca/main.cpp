@@ -13,14 +13,25 @@ lechuga, el conejo se comerá la lechuga. El jugador debe controlar que órdenes
 lograr que el robot transporte los tres individuos a la otra orilla, sanos y salvos.
 */
 
-#include "Barca.h"
 #include "Individuo.h"
+#include "Barca.h"
 #include "Orilla.h"
+#include "Lugar.h"
+#include "Jugador.h"
+
 #include <iostream>
 #include <string>
 
 using namespace std;
 int main()
 {
+  Individuo robot ("Robot", false, false);
+  Individuo zorro ("Zorro", false, false);
+  Individuo conejo ("Conejo", false, false);
+  Individuo lachuga ("Lechuga", false, false);
+  
+  
+  
+  cout << "¡Si llego!" <<endl;
   return 0;
 }

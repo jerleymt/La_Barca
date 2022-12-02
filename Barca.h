@@ -1,11 +1,13 @@
 #ifndef BARCA_H
 #define BARCA_H
 
+#include "Lugar.h"
+
 #include <string>
 
 using namespace std;
 
-class Barca
+class Barca: public Lugar
 {
   private:
   string nombre;
