@@ -25,6 +25,11 @@ string Orilla::mostrar(int dato)
   return espacio.at(dato);
 }
 
+int Orilla::espacio_ocupado()
+{
+  return espacio.size();
+}
+
 string Orilla::obtener_nombre()
 {
   return nombre;

@@ -35,6 +35,7 @@ int main()
   Orilla la_barca        ("\n|La Barca |");
   Orilla orilla_izquierda("\n|Izquierda|");
   Orilla orilla_derecha  ("\n|Derecha  |");
+  Orilla rio             ("\n|Rio      |");
 
   Lugar el_lugar("El lugar");
 
@@ -52,18 +53,23 @@ int main()
   cout << orilla_izquierda.mostrar(2)<<endl;
   cout << orilla_izquierda.mostrar(3)<<endl;
 
-  cout << orilla_derecha.obtener_nombre()<<endl;
-  cout << orilla_derecha.mostrar(0)<<endl;
-  cout << orilla_derecha.mostrar(1)<<endl;
-  cout << orilla_derecha.mostrar(2)<<endl;
-  cout << orilla_derecha.mostrar(3)<<endl;
-
   cout << la_barca.obtener_nombre()<<endl;
   cout << la_barca.mostrar(0)<<endl;
   cout << la_barca.mostrar(1)<<endl;
   cout << la_barca.mostrar(2)<<endl;
   cout << la_barca.mostrar(3)<<endl;
+
+  cout << rio.obtener_nombre()<<endl;
+  cout << rio.mostrar(0)<<endl;
+  cout << rio.mostrar(1)<<endl;
+  cout << rio.mostrar(2)<<endl;
+  cout << rio.mostrar(3)<<endl;
     
+  cout << orilla_derecha.obtener_nombre()<<endl;
+  cout << orilla_derecha.mostrar(0)<<endl;
+  cout << orilla_derecha.mostrar(1)<<endl;
+  cout << orilla_derecha.mostrar(2)<<endl;
+  cout << orilla_derecha.mostrar(3)<<endl;
   
   cout << "\nSi llego!" <<endl;
   return 0;

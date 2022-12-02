@@ -23,6 +23,7 @@ class Orilla
 
   virtual void  subir(string);
   virtual string  mostrar(int);
+  virtual int espacio_ocupado();
 
 };
   
