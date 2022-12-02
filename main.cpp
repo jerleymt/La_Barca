@@ -32,9 +32,9 @@ int main()
   conejo.es_herbivoro();
   Individuo lechuga      ("|Lechuga  |");
 
-  Orilla la_barca        ("|La Barca |");
-  Orilla orilla_izquierda("|Izquierda|");
-  Orilla orilla_derecha  ("|Derecha  |");
+  Orilla la_barca        ("\n|La Barca |");
+  Orilla orilla_izquierda("\n|Izquierda|");
+  Orilla orilla_derecha  ("\n|Derecha  |");
 
   Lugar el_lugar("El lugar");
 
@@ -45,9 +45,6 @@ int main()
   orilla_izquierda.subir(zorro.obtener_nombre());
   orilla_izquierda.subir(conejo.obtener_nombre());
   orilla_izquierda.subir(lechuga.obtener_nombre());
-
-  orilla_derecha.subir(robot.obtener_nombre());
-  
 
   cout << orilla_izquierda.obtener_nombre()<<endl;
   cout << orilla_izquierda.mostrar(0)<<endl;
@@ -68,6 +65,6 @@ int main()
   cout << la_barca.mostrar(3)<<endl;
     
   
-  cout << "¡Si llego!" <<endl;
+  cout << "\nSi llego!" <<endl;
   return 0;
 }

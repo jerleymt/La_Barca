@@ -17,7 +17,7 @@ void Orilla::subir(string dato)
 
 string Orilla::mostrar(int dato)
 {
- if (espacio.size() < 0)
+ if (espacio.size() == 0)
  {
    return "|         |";
  }
