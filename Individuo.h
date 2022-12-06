@@ -8,7 +8,7 @@ using namespace std;
 
 class Individuo
 {
-  private:
+  protected:
   string nombre;
   bool herbivoro = false;
   bool carnivoro = false;

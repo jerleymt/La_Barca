@@ -1,29 +1,24 @@
 #ifndef LUGAR_H
 #define LUGAR_H
 
-#include "Barca.h"
-#include "Orilla.h"
-
+#include "Individuo.h"
 #include <string>
 #include <vector>
+
 using namespace std;
 
 class Lugar
 {
-  private:
+  protected:
   string nombre;
-  vector<string>espacio;
-
+  vector<Individuo>vector_lugar;
+  
   public:
-
-  Lugar(string );
-  Lugar(Barca);
-  Lugar(Orilla);
-
-
+  Lugar(string nombre);  
   virtual ~Lugar();
-
-  virtual string  obtener_nombre();
+  virtual string  ver_nombre();
+  virtual void insertar_individuo(Individuo individuo);
+  virtual void ver_individuo(int posicion);
 
 };
   

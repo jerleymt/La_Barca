@@ -1,19 +1,40 @@
 #include "Lugar.h"
 
-Lugar::Lugar(string dato_entrada)
+Lugar::Lugar(string nombre)
+:nombre(nombre)
 {
-  espacio.push_back(dato_entrada);
+  
 }
 
-
+/**
+*Construye la clase Lugar.
+*/
 Lugar::~Lugar()
 {
   
 }
 
-string  Lugar::obtener_nombre()
+/**
+*Destruye la clase Lugar; no hace nada.
+*/
+string  Lugar::ver_nombre()
 {
   return nombre;
 }
 
+/**
+*Inserta un objeto de la clase Individuo en un vector.
+*/
+void Lugar::insertar_individuo(Individuo individuo)
+{
+  vector_lugar.push_back(individuo);
+}
 
+/**
+*
+*/
+void Lugar::ver_individuo(int posicion)
+{
+   vector_lugar.at(posicion);
+  
+}

@@ -3,21 +3,13 @@
 
 #include "Lugar.h"
 
-#include <string>
-
 using namespace std;
 
-class Barca
+class Barca: public Lugar
 {
-  private:
-  string nombre;
-  
   public:
-  Barca(string nombre);
-
+  using Lugar::Lugar;
   virtual ~Barca();
-
-  virtual string  obtener_nombre();
 
 };
   
