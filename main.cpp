@@ -25,7 +25,8 @@ lograr que el robot transporte los tres individuos a la otra orilla, sanos y sal
 using namespace std;
 int main()
 {
-  Individuo robot        ("|Robot    |");
+  Individuo* robot   = new Individuo     ("|Robot    |");
+  //Individuo robot       ("|Robot    |");
   Individuo zorro        ("|Zorro    |");  
   zorro.es_carnivoro();
   Individuo conejo       ("|Conejo   |");  
@@ -41,13 +42,14 @@ int main()
 
   Jugador player("Jugador");
 
-
-  orilla_izquierda.insertar_individuo(robot);
+  
+  
+  orilla_izquierda.insertar_individuo(*robot);
   //orilla_izquierda.insertar_individuo(zorro);
   //orilla_izquierda.insertar_individuo(conejo);
   //orilla_izquierda.insertar_individuo(lechuga);
 
-  // el_lugar.set_orilla(orilla_izquierda);
+  //el_lugar.set_orilla(orilla_izquierda);
   // el_lugar.set_orilla(la_barca);
   // el_lugar.set_orilla(rio);
   // el_lugar.set_orilla(orilla_derecha);
@@ -56,7 +58,7 @@ int main()
   
 //Pantalla
    cout << orilla_izquierda.ver_nombre()<<endl;
-   //cout << orilla_izquierda.ver_guardado(0)->obtener_nombre<<endl;
+   cout << orilla_izquierda.ver_individuo()<<endl;
    //cout << g->.obtener_nombre <<endl;
   // cout << orilla_izquierda.ver_guardado(2)<<endl;
   // cout << orilla_izquierda.ver_guardado(3)<<endl;

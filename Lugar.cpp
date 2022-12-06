@@ -28,13 +28,13 @@ string  Lugar::ver_nombre()
 void Lugar::insertar_individuo(Individuo individuo)
 {
   vector_lugar.push_back(individuo);
+  cout<<"[1]"<<endl;
 }
 
 /**
 *
 */
-void Lugar::ver_individuo(int posicion)
+string Lugar::ver_individuo()
 {
-   vector_lugar.at(posicion);
-  
+   return vector_lugar.at(0).obtener_nombre();  
 }

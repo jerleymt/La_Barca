@@ -4,6 +4,7 @@
 #include "Individuo.h"
 #include <string>
 #include <vector>
+#include <iostream>
 
 using namespace std;
 
@@ -18,7 +19,7 @@ class Lugar
   virtual ~Lugar();
   virtual string  ver_nombre();
   virtual void insertar_individuo(Individuo individuo);
-  virtual void ver_individuo(int posicion);
+  virtual string ver_individuo();
 
 };
   
