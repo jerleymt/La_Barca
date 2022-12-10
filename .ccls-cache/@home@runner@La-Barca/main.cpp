@@ -25,7 +25,7 @@ lograr que el robot transporte los tres individuos a la otra orilla, sanos y sal
 using namespace std;
 int main()
 {
-  Individuo robot = Individuo        ("|Robot    |");
+  Individuo robot         ("|Robot    |");
   Individuo zorro         ("|Zorro    |");  
   zorro.es_carnivoro();
   Individuo conejo        ("|Conejo   |");  
