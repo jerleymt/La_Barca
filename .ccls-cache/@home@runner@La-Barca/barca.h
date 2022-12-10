@@ -1,29 +1,25 @@
-/*
-Archivo: orilla.h
-Autor: Jose Erley Murillo Torres
-Correo: jose.erley.murillo@correounivlle.edu.co
-*/
-
-/**
-Clase: Orilla 
-Intención:
-Relaciones:
-*/
 #ifndef BARCA_H
 #define BARCA_H
 
-#include "personaje.h"
+//#include <vector>
+#include <string>
+//#include "Individuo.h"
+using namespace std;
 
-class Barca 
+class Barca
 {
-private:
-bool orilla;
-public:
-Barca();
-virtual ~Barca();
-virtual bool mover_barca();
-};
+  private:
+  string nombre;
+  
+  public:
+  Barca(string nombre);
 
+  virtual ~Barca();
+
+  virtual string  obtener_nombre();
+
+};
+  
 #else
 class Barca;
 #endif

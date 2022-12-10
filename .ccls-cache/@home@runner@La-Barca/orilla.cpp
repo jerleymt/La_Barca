@@ -1,14 +1,16 @@
-
 #include "Orilla.h"
-Orilla::Ortlla()
+
+Orilla::Orilla(string _nombre)
+{
+nombre = _nombre;  
+}
+
+Orilla::~Orilla()
 {
   
 }
-Barca::~Barca()
+
+string Orilla::obtener_nombre()
 {
-  
-}
-bool Barca::mover_barca()
-{
-  
+  return nombre;
 }
