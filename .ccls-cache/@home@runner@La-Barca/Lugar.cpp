@@ -1,4 +1,5 @@
 #include "Lugar.h"
+#include <iostream>
 
 Lugar::Lugar(string nombre)
 :nombre(nombre)
@@ -28,13 +29,39 @@ string  Lugar::ver_nombre()
 void Lugar::insertar_individuo(Individuo individuo)
 {
   vector_lugar.push_back(individuo);
-  cout<<"[1]"<<endl;
 }
 
 /**
 *
 */
-string Lugar::ver_individuo()
+string Lugar::ver_individuo(int posicion)
 {
-   return vector_lugar.at(0).obtener_nombre();  
+  if (posicion >= vector_lugar.size())
+  {
+    return "|         |";
+  }
+  return vector_lugar.at(posicion).obtener_nombre();  
+}
+
+int Lugar::tamaño_vector()
+{
+  return vector_lugar.size();
+  
+}
+
+void Lugar::insertar_Orilla(Lugar _lugar)
+{
+  vector_orilla.push_back(_lugar);
+}
+
+string Lugar::ver_orilla(int posicion)
+{
+    string acumulado="";
+  
+  for(int b=0; b<=vector_orilla.at(posicion).tamaño_vector(); b++)
+  {      
+    acumulado = vector_orilla.at(posicion).ver_individuo(b);   
+    acumulado=acumulado+"\n";
+  }
+  return acumulado;
 }

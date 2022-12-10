@@ -10,6 +10,7 @@ class Orilla: public Lugar
   public:
   Orilla(string);
   virtual ~Orilla();
+  
 };
   
 #else
