@@ -37,20 +37,26 @@ using namespace std;
 
 int main()
 {
+  //Creacion de los personaje.
   Individuo robot("|Robot    |");
   Individuo zorro("|Zorro    |");  
-  zorro.es_carnivoro();
   Individuo conejo("|Conejo   |");  
-  conejo.es_herbivoro();
   Individuo lechuga("|Lechuga  |");
-
-  Barca la_barca("\n|La Barca |");
-  Orilla orilla_izquierda("\n|Izquierda|");
-  Orilla orilla_derecha("\n|Derecha  |");
-  Barca rio("\n|Rio      |");
-
-  Lugar el_lugar("El lugar");
   
+  //Defino tipo alimentación para los personajes.
+  zorro.es_carnivoro();
+  conejo.es_herbivoro();
+  
+  //Creacion de las orillas la barca y el rio.
+  Barca la_barca("|La Barca |");
+  Orilla orilla_izquierda("|Izquierda|");
+  Orilla orilla_derecha("|Derecha  |");
+  Barca rio("|Rio      |");
+  
+  //Creacion del lugar.  
+  Lugar el_lugar("El lug.ar");
+  
+  //Creacion del jugador
   Jugador player("Jugador");
 
   
@@ -58,7 +64,7 @@ int main()
   orilla_izquierda.insertar_individuo(robot);
   orilla_izquierda.insertar_individuo(zorro);
   orilla_izquierda.insertar_individuo(conejo);
-  rio.insertar_individuo(lechuga);
+  orilla_izquierda.insertar_individuo(lechuga);
   
 
   el_lugar.insertar_Orilla(orilla_izquierda);
@@ -67,31 +73,30 @@ int main()
   el_lugar.insertar_Orilla(orilla_derecha);
   
   //Pantalla
-  cout << orilla_izquierda.ver_nombre()<<endl;
-  cout << orilla_izquierda.ver_individuo(0)<<endl;
-  cout << orilla_izquierda.ver_individuo(1)<<endl;
-  cout << orilla_izquierda.ver_individuo(2)<<endl;
-  cout << orilla_izquierda.ver_individuo(3)<<endl;
-  
-  cout << la_barca.ver_nombre()<<endl;
-  cout << la_barca.ver_individuo(0)<<endl;
-  cout << la_barca.ver_individuo(1)<<endl;
-  cout << la_barca.ver_individuo(2)<<endl;
-  cout << la_barca.ver_individuo(3)<<endl;
-
-  cout << rio.ver_nombre()<<endl;
-  cout << rio.ver_individuo(0)<<endl;
-  cout << rio.ver_individuo(1)<<endl;
-  cout << rio.ver_individuo(2)<<endl;
-  cout << rio.ver_individuo(3)<<endl;
-    
+  cout << orilla_izquierda.ver_nombre();
+  cout << la_barca.ver_nombre();
+  cout << rio.ver_nombre();
   cout << orilla_derecha.ver_nombre()<<endl;
-  cout << orilla_derecha.ver_individuo(0)<<endl;
-  cout << orilla_derecha.ver_individuo(1)<<endl;
-  cout << orilla_derecha.ver_individuo(2)<<endl;
-  cout << orilla_derecha.ver_individuo(3)<<endl;
   
-  cout << "\nSi llego!" <<endl;
+  cout << orilla_izquierda.ver_individuo(0);
+  cout << la_barca.ver_individuo(0);
+  cout << rio.ver_individuo(0);
+  cout << orilla_derecha.ver_individuo(0)<<endl;
+  
+  cout << orilla_izquierda.ver_individuo(1);
+  cout << la_barca.ver_individuo(1);
+  cout << rio.ver_individuo(1);
+  cout << orilla_derecha.ver_individuo(1)<<endl;  
+  
+  cout << orilla_izquierda.ver_individuo(2);
+  cout << la_barca.ver_individuo(2);
+  cout << rio.ver_individuo(2);
+  cout << orilla_derecha.ver_individuo(2)<<endl;  
+  
+  cout << orilla_izquierda.ver_individuo(3);
+  cout << la_barca.ver_individuo(3);
+  cout << rio.ver_individuo(3);
+  cout << orilla_derecha.ver_individuo(3)<<endl;  
 
   return 0;
 }
