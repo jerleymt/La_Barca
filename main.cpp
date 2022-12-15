@@ -59,20 +59,19 @@ int main()
   //Creacion del jugador
   Jugador player("Jugador");
 
-  
-  
+  //Se hubican los personajes en la orilla izquierda.
   orilla_izquierda.insertar_individuo(robot);
   orilla_izquierda.insertar_individuo(zorro);
   orilla_izquierda.insertar_individuo(conejo);
   orilla_izquierda.insertar_individuo(lechuga);
-  
 
+  //Se hubican las orillas la barca y el rio dentro de lugar.
   el_lugar.insertar_Orilla(orilla_izquierda);
   el_lugar.insertar_Orilla(la_barca);
   el_lugar.insertar_Orilla(rio);
   el_lugar.insertar_Orilla(orilla_derecha);
   
-  //Pantalla
+  //Pantalla.
   cout << orilla_izquierda.ver_nombre();
   cout << la_barca.ver_nombre();
   cout << rio.ver_nombre();
