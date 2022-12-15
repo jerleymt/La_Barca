@@ -1,3 +1,13 @@
+/*
+  Archivo: Individuo.cpp
+  Correo: jose.erley.murillo@correounivalle.edu.co
+  Autor: Jose Erley Murillo Torres
+  Código: 2177964
+*/
+
+/**
+  *Clases incluidas.
+*/
 #include "Individuo.h"
 
 Individuo::Individuo(string _nombre)
@@ -26,13 +36,23 @@ void Individuo::es_herbivoro()
 }
 
 
-string Individuo::dieta() {
-  if (herbivoro == false && carnivoro == false) {
+string Individuo::dieta() 
+{
+  if (herbivoro == false && carnivoro == false) 
+  {
     return " es un vegetal";
-  } else if (herbivoro == false && carnivoro == true) {
+  } 
+  
+  else if (herbivoro == false && carnivoro == true) 
+  {
     return " es carniboro";
-  } else if (herbivoro == true && carnivoro == false) {
+  } 
+  
+  else if (herbivoro == true && carnivoro == false) 
+  
+  {
     return " es herbiboro";
   }
+  
   return " es omniboro";
 }
